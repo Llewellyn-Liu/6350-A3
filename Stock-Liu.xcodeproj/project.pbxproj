@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB315F2CC832DD4820AD14D /* Pods_Stock_Liu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB49CC9CEB642476393FEA2 /* Pods_Stock_Liu.framework */; };
+		FF36EA722AE48DDB000F7F51 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36EA712AE48DDB000F7F51 /* StockViewController.swift */; };
 		FF3EF4722AE4761400D1539F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4712AE4761400D1539F /* AppDelegate.swift */; };
 		FF3EF4742AE4761400D1539F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4732AE4761400D1539F /* SceneDelegate.swift */; };
 		FF3EF4762AE4761400D1539F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4752AE4761400D1539F /* ViewController.swift */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EB49CC9CEB642476393FEA2 /* Pods_Stock_Liu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock_Liu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D9E5CE2B0C0ADB066E0259 /* Pods-Stock-Liu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock-Liu.release.xcconfig"; path = "Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu.release.xcconfig"; sourceTree = "<group>"; };
+		E5D73937CC524947F3F95038 /* Pods-Stock-Liu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock-Liu.debug.xcconfig"; path = "Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu.debug.xcconfig"; sourceTree = "<group>"; };
+		FF36EA712AE48DDB000F7F51 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
 		FF3EF46E2AE4761400D1539F /* Stock-Liu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock-Liu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3EF4712AE4761400D1539F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF3EF4732AE4761400D1539F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB315F2CC832DD4820AD14D /* Pods_Stock_Liu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A096CC2336A0DCA6E5AA228 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB49CC9CEB642476393FEA2 /* Pods_Stock_Liu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		693265350BFABF1E4032FCE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5D73937CC524947F3F95038 /* Pods-Stock-Liu.debug.xcconfig */,
+				B1D9E5CE2B0C0ADB066E0259 /* Pods-Stock-Liu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF3EF4652AE4761400D1539F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,8 @@
 				FF3EF48A2AE4762200D1539F /* Stock-LiuTests */,
 				FF3EF4942AE4762200D1539F /* Stock-LiuUITests */,
 				FF3EF46F2AE4761400D1539F /* Products */,
+				693265350BFABF1E4032FCE7 /* Pods */,
+				1A096CC2336A0DCA6E5AA228 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +135,7 @@
 				FF3EF47F2AE4762100D1539F /* LaunchScreen.storyboard */,
 				FF3EF4822AE4762100D1539F /* Info.plist */,
 				FF3EF47A2AE4761400D1539F /* Stock_Liu.xcdatamodeld */,
+				FF36EA712AE48DDB000F7F51 /* StockViewController.swift */,
 			);
 			path = "Stock-Liu";
 			sourceTree = "<group>";
@@ -137,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF3EF49B2AE4762200D1539F /* Build configuration list for PBXNativeTarget "Stock-Liu" */;
 			buildPhases = (
+				1A1BD3EFF79E0600A12FC144 /* [CP] Check Pods Manifest.lock */,
 				FF3EF46A2AE4761400D1539F /* Sources */,
 				FF3EF46B2AE4761400D1539F /* Frameworks */,
 				FF3EF46C2AE4761400D1539F /* Resources */,
+				333E5FC52870C851892667FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +285,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A1BD3EFF79E0600A12FC144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock-Liu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		333E5FC52870C851892667FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF3EF46A2AE4761400D1539F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +336,7 @@
 				FF3EF4722AE4761400D1539F /* AppDelegate.swift in Sources */,
 				FF3EF4742AE4761400D1539F /* SceneDelegate.swift in Sources */,
 				FF3EF47C2AE4761400D1539F /* Stock_Liu.xcdatamodeld in Sources */,
+				FF36EA722AE48DDB000F7F51 /* StockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +513,7 @@
 		};
 		FF3EF49C2AE4762200D1539F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D73937CC524947F3F95038 /* Pods-Stock-Liu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +542,7 @@
 		};
 		FF3EF49D2AE4762200D1539F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D9E5CE2B0C0ADB066E0259 /* Pods-Stock-Liu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

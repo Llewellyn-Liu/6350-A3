@@ -8,7 +8,11 @@
 import UIKit
 
 class StockViewController: UIViewController {
+    @IBOutlet weak var btn: UIButton!
 
+    @IBAction func addStockAction(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
