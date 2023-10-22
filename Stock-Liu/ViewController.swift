@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
  
-    let stockNames = ["MS", "TSLA", "META", "GOOG"]
+    let stockNames = ["MSFT", "TSLA", "META", "GOOG"]
     
 
     @IBOutlet weak var tableView: UITableView!

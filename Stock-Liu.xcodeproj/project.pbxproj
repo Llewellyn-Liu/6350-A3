@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BB315F2CC832DD4820AD14D /* Pods_Stock_Liu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB49CC9CEB642476393FEA2 /* Pods_Stock_Liu.framework */; };
 		FF36EA722AE48DDB000F7F51 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36EA712AE48DDB000F7F51 /* StockViewController.swift */; };
+		FF36EA752AE4935B000F7F51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF36EA742AE4935B000F7F51 /* Constants.swift */; };
 		FF3EF4722AE4761400D1539F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4712AE4761400D1539F /* AppDelegate.swift */; };
 		FF3EF4742AE4761400D1539F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4732AE4761400D1539F /* SceneDelegate.swift */; };
 		FF3EF4762AE4761400D1539F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3EF4752AE4761400D1539F /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		B1D9E5CE2B0C0ADB066E0259 /* Pods-Stock-Liu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock-Liu.release.xcconfig"; path = "Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu.release.xcconfig"; sourceTree = "<group>"; };
 		E5D73937CC524947F3F95038 /* Pods-Stock-Liu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock-Liu.debug.xcconfig"; path = "Target Support Files/Pods-Stock-Liu/Pods-Stock-Liu.debug.xcconfig"; sourceTree = "<group>"; };
 		FF36EA712AE48DDB000F7F51 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		FF36EA742AE4935B000F7F51 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF3EF46E2AE4761400D1539F /* Stock-Liu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock-Liu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3EF4712AE4761400D1539F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF3EF4732AE4761400D1539F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF36EA732AE4932F000F7F51 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF36EA742AE4935B000F7F51 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FF3EF4652AE4761400D1539F = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 		FF3EF4702AE4761400D1539F /* Stock-Liu */ = {
 			isa = PBXGroup;
 			children = (
+				FF36EA732AE4932F000F7F51 /* Utils */,
 				FF3EF4712AE4761400D1539F /* AppDelegate.swift */,
 				FF3EF4732AE4761400D1539F /* SceneDelegate.swift */,
 				FF3EF4752AE4761400D1539F /* ViewController.swift */,
@@ -337,6 +348,7 @@
 				FF3EF4742AE4761400D1539F /* SceneDelegate.swift in Sources */,
 				FF3EF47C2AE4761400D1539F /* Stock_Liu.xcdatamodeld in Sources */,
 				FF36EA722AE48DDB000F7F51 /* StockViewController.swift in Sources */,
+				FF36EA752AE4935B000F7F51 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A7B6LRM27P;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock-Liu/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -549,6 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A7B6LRM27P;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stock-Liu/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

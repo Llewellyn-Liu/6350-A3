@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="stock-app" id="g2V-qF-jzd">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="CVD-EM-X2N">
                             <connections>
-                                <segue destination="CM6-Tb-tnd" kind="show" identifier="segue-add-stock" id="uaF-PF-Le1"/>
+                                <segue destination="HNE-YJ-zIF" kind="show" id="yGa-qQ-bIW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -60,50 +60,47 @@
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
         </scene>
         <!--Stock View Controller-->
-        <scene sceneID="Fxi-gM-bcx">
+        <scene sceneID="nAP-Gl-IfS">
             <objects>
-                <viewController id="CM6-Tb-tnd" customClass="StockViewController" customModule="Stock_Liu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kxu-KZ-AVF">
+                <viewController id="HNE-YJ-zIF" customClass="StockViewController" customModule="Stock_Liu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kz-L3-ZO2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stock Tag" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TI-I9-N1W">
-                                <rect key="frame" x="50" y="409" width="293" height="34"/>
-                                <accessibility key="accessibilityConfiguration" hint="Input Stock Name"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ky-sw-RVC">
+                                <rect key="frame" x="20" y="409" width="353" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FJ-Iu-Ncf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFN-ti-Vch">
                                 <rect key="frame" x="20" y="483" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="addStockAction:" destination="CM6-Tb-tnd" eventType="touchUpInside" id="NC3-Vh-56t"/>
+                                    <action selector="getJson:" destination="HNE-YJ-zIF" eventType="touchUpInside" id="OJl-c8-Qng"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="HJz-dY-Vau"/>
+                        <viewLayoutGuide key="safeArea" id="bwC-S6-apI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1FJ-Iu-Ncf" firstAttribute="top" secondItem="3TI-I9-N1W" secondAttribute="bottom" constant="40" id="G99-Ca-keu"/>
-                            <constraint firstItem="1FJ-Iu-Ncf" firstAttribute="centerX" secondItem="Kxu-KZ-AVF" secondAttribute="centerX" id="Igu-Al-8qq"/>
-                            <constraint firstItem="3TI-I9-N1W" firstAttribute="leading" secondItem="HJz-dY-Vau" secondAttribute="leading" constant="50" id="MJN-Zp-kPT"/>
-                            <constraint firstItem="HJz-dY-Vau" firstAttribute="trailing" secondItem="1FJ-Iu-Ncf" secondAttribute="trailing" constant="20" id="Myg-TO-CIg"/>
-                            <constraint firstItem="3TI-I9-N1W" firstAttribute="centerY" secondItem="Kxu-KZ-AVF" secondAttribute="centerY" id="QOy-Iu-Liy"/>
-                            <constraint firstItem="1FJ-Iu-Ncf" firstAttribute="leading" secondItem="HJz-dY-Vau" secondAttribute="leading" constant="20" id="qGO-hR-1iX"/>
-                            <constraint firstItem="HJz-dY-Vau" firstAttribute="trailing" secondItem="3TI-I9-N1W" secondAttribute="trailing" constant="50" id="wiM-7o-Tny"/>
-                            <constraint firstItem="3TI-I9-N1W" firstAttribute="centerX" secondItem="Kxu-KZ-AVF" secondAttribute="centerX" id="yMX-a5-l29"/>
+                            <constraint firstItem="9Ky-sw-RVC" firstAttribute="centerY" secondItem="0kz-L3-ZO2" secondAttribute="centerY" id="B1H-aZ-RhR"/>
+                            <constraint firstItem="bwC-S6-apI" firstAttribute="trailing" secondItem="9Ky-sw-RVC" secondAttribute="trailing" constant="20" id="Hsb-hi-bhu"/>
+                            <constraint firstItem="MFN-ti-Vch" firstAttribute="leading" secondItem="bwC-S6-apI" secondAttribute="leading" constant="20" id="Nve-NT-QmG"/>
+                            <constraint firstItem="9Ky-sw-RVC" firstAttribute="centerX" secondItem="0kz-L3-ZO2" secondAttribute="centerX" id="Xbd-3b-hQx"/>
+                            <constraint firstItem="9Ky-sw-RVC" firstAttribute="leading" secondItem="bwC-S6-apI" secondAttribute="leading" constant="20" id="cCJ-AM-fv5"/>
+                            <constraint firstItem="bwC-S6-apI" firstAttribute="trailing" secondItem="MFN-ti-Vch" secondAttribute="trailing" constant="20" id="jjk-dI-1ee"/>
+                            <constraint firstItem="MFN-ti-Vch" firstAttribute="top" secondItem="9Ky-sw-RVC" secondAttribute="bottom" constant="40" id="xKe-zo-qmg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SYo-Sz-sa1"/>
+                    <navigationItem key="navigationItem" id="fAp-Kf-A50"/>
                     <connections>
-                        <outlet property="btn" destination="1FJ-Iu-Ncf" id="rHf-eO-vXk"/>
-                        <outlet property="stockTagInput" destination="3TI-I9-N1W" id="zb2-j2-Sfr"/>
+                        <outlet property="textSymbol" destination="9Ky-sw-RVC" id="wx3-cp-yne"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhU-Ju-m2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPa-ap-Yhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="22"/>
+            <point key="canvasLocation" x="1999" y="-11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xvk-vz-6Y0">
